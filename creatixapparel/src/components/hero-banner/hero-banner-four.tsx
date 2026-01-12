@@ -15,12 +15,12 @@ export default function HeroBannerFour() {
               </div>
               <h4 className="tp-hero-3-title tp_reveal_anim">
                 <span className="tp-reveal-line">{"We're"} a high-end</span>
-                <span className="tp-reveal-line">digital agency</span>
+                <span className="tp-reveal-line">digitizing agency</span>
               </h4>
               <span className="tp-hero-3-category tp_reveal_anim">
-                ux/ui design / motion design / branding / development
+                digitizing / patches / vector art / embroidery / other services
               </span>
-              <Link className="tp-btn-black-2" href="/contact">
+              <Link className="tp-btn-black-2" href="/contact-2">
                 Say Hello{" "}
                 <span className="p-relative">
                   <RightArrowTwo />
