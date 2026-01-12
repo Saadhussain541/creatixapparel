@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import * as THREE from 'three'; // Import Three.js
+import * as THREE from '../../node_modules/@types/three'; // Import Three.js
 
 export default class WebGL {
     constructor(e) {
