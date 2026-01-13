@@ -9,19 +9,19 @@ import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 const service_data = [
   {
     id: 1,
-    title: "Branding",
+    title: "Digitizing Embroidery",
     desc: "Branding is one of the most important ingredients for the success of any business.",
     icon: s_2,
   },
   {
     id: 2,
-    title: "Website design",
+    title: "Custom Patches",
     desc: "The perfect cocktail should still look and taste perfect no matter the size of the glass you serve it in.",
     icon: s_1,
   },
   {
     id: 3,
-    title: "Marketing",
+    title: "Vector Art",
     desc: "We take that same approach with the apps & websites we create. you go there because of the overall experience.",
     icon: s_3,
   },

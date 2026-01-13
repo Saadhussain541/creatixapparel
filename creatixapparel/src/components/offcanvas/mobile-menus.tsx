@@ -23,17 +23,21 @@ export default function MobileMenus() {
           {menu_data.map((menu) => (
             <li
               key={menu.id}
-              className={`has-dropdown ${menu.home_menus || menu.portfolio_mega_menus
+              className={`${menu.home_menus || menu.pages_mega_menu || menu.portfolio_mega_menus || menu.dropdown_menus ? "has-dropdown" : ""} ${menu.home_menus || menu.portfolio_mega_menus
                   ? "has-homemenu"
                   : ""
                 } ${menu.home_menus ? "dropdown-opened" : ""}`}
             >
-              <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
-                {menu.title}
-                <button className="dropdown-toggle-btn">
-                  <i className="fa-light fa-plus"></i>
-                </button>
-              </a>
+              {menu.home_menus || menu.pages_mega_menu || menu.portfolio_mega_menus || menu.dropdown_menus ? (
+                <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
+                  {menu.title}
+                  <button className="dropdown-toggle-btn">
+                    <i className="fa-light fa-plus"></i>
+                  </button>
+                </a>
+              ) : (
+                <Link href={menu.link}>{menu.title}</Link>
+              )}
               {menu.home_menus ? (
                 <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none" }}>
                   <div className="tp-menu-fullwidth">
@@ -63,10 +67,10 @@ export default function MobileMenus() {
                 <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none" }}>
                   <div className="tp-megamenu-wrapper">
                     <div className="row gx-50">
-                      <div className="col-xl-8">
+                      <div className={menu.pages_mega_menu.second ? "col-xl-8" : "col-xl-12"}>
                         <div className="tp-megamenu-list-box">
                           <div className="row gx-50">
-                            <div className="col-xl-8">
+                            <div className={menu.pages_mega_menu.second ? "col-xl-8" : "col-xl-12"}>
                               <div className="tp-megamenu-list">
                                 <h4 className="tp-megamenu-title">
                                   {menu.pages_mega_menu.first.title}
@@ -84,50 +88,35 @@ export default function MobileMenus() {
                                 </div>
                               </div>
                             </div>
-                            <div className="col-xl-4">
-                              <div className="tp-megamenu-list tp-megamenu-list-2">
-                                <h4 className="tp-megamenu-title">
-                                  {menu.pages_mega_menu.second.title}
-                                </h4>
-                                <div className="tp-megamenu-list-wrap">
-                                  <ul>
-                                    {menu.pages_mega_menu.second.submenus.map(
-                                      (sm, i) => (
-                                        <li key={i}>
-                                          <Link href={sm.link}>{sm.title}</Link>
-                                        </li>
-                                      )
-                                    )}
-                                  </ul>
-                                </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                      {menu.pages_mega_menu.second && (
+                        <div className="col-xl-4">
+                          <div className="tp-megamenu-shop-style">
+                            <div className="tp-shop-banner-left p-relative">
+                              <div className="tp-shop-banner-thumb">
+                                <Image
+                                  style={{ width: "100%", height: "auto" }}
+                                  src={shop_banner}
+                                  alt="shop-banner"
+                                />
+                              </div>
+                              <div className="tp-shop-banner-content">
+                                <h4 className="tp-shop-banner-title">Sale</h4>
+                                <span>20% Off all Shoes</span>
+                                <Link
+                                  className="tp-shop-btn"
+                                  href="/shop-details/1"
+                                >
+                                  Shop Now
+                                </Link>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-xl-4">
-                        <div className="tp-megamenu-shop-style">
-                          <div className="tp-shop-banner-left p-relative">
-                            <div className="tp-shop-banner-thumb">
-                              <Image
-                                style={{ width: "100%", height: "auto" }}
-                                src={shop_banner}
-                                alt="shop-banner"
-                              />
-                            </div>
-                            <div className="tp-shop-banner-content">
-                              <h4 className="tp-shop-banner-title">Sale</h4>
-                              <span>20% Off all Shoes</span>
-                              <Link
-                                className="tp-shop-btn"
-                                href="/shop-details/1"
-                              >
-                                Shop Now
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -173,7 +162,7 @@ export default function MobileMenus() {
                                 </div>
                               </div>
 
-                              {menu.portfolio_mega_menus.second.submenus.map(
+                              {menu.portfolio_mega_menus.second && menu.portfolio_mega_menus.second.submenus && menu.portfolio_mega_menus.second.submenus.map(
                                 (portSm2, i) => (
                                   <div key={i} className="col-xxl-3 col-xl-3">
                                     <div className="tp-megamenu-list tp-megamenu-list-2 ml-20">

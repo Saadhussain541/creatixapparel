@@ -16,7 +16,7 @@ export default function ServiceHero() {
                 Experience <br /> the best services.
               </h4>
               <p className="tp_fade_bottom">
-                Fulfilled direction use continual set him propriety continued.
+              Your one-stop solution for premium Custom Patches, Digitizing, and Vector Art conversion.
               </p>
             </div>
           </div>
@@ -32,12 +32,12 @@ export default function ServiceHero() {
                   style={{height:"auto"}}
                 />
               </div>
-              <Image
+              {/* <Image
                 className="sv-hero-thumb-shape d-none d-lg-block"
                 src={ser_hero_shape}
                 alt="ser_hero-shape"
                 style={{height:"auto"}}
-              />
+              /> */}
             </div>
           </div>
         </div>

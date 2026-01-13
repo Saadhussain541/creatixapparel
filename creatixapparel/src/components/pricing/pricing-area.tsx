@@ -79,7 +79,7 @@ export default function PricingArea() {
                   </div>
                   <Link
                     className={`tp-btn-black-md ${item.id===2?"white-bg":""} w-100 text-center`}
-                    href="/contact"
+                    href="/contact-2"
                   >
                     Choose Plan
                     <span>

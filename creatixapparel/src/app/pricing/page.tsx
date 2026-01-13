@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import PricingMain from "@/pages/pricing/pricing-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Pricing page",
+  title: "Creatix Apparel - Pricing page",
 };
 
 const PricingPage = () => {

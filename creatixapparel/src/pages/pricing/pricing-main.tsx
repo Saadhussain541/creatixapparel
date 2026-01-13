@@ -5,7 +5,8 @@ import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
-
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 // internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
@@ -29,7 +30,7 @@ const PricingMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -48,7 +49,7 @@ const PricingMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Creatix Apparel</span>
                         <h4 className="tm-hero-title tp-char-animation">
                           Pricing Plans
                         </h4>
@@ -76,7 +77,7 @@ const PricingMain = () => {
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" />
+            <FooterFour />
             {/* footer area */}
           </div>
         </div>

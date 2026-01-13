@@ -15,7 +15,7 @@ export interface IMenuDT {
         link: string;
       }[];
     };
-    second: {
+    second?: {
       title: string;
       submenus: {
         title: string;
@@ -34,7 +34,7 @@ export interface IMenuDT {
         }[];
       }[];
     };
-    second: {
+    second?: {
       submenus: {
         id: number;
         title: string;

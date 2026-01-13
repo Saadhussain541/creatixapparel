@@ -5,8 +5,9 @@ import { useGSAP } from "@gsap/react";
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
-
+import HeaderFour from "@/layouts/headers/header-four";
 // internal imports
+import FooterFour from "@/layouts/footers/footer-four";
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import ServiceDetailsArea from "@/components/service/service-details-area";
@@ -30,7 +31,7 @@ const ServiceDetailsMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -41,7 +42,7 @@ const ServiceDetailsMain = () => {
             {/* service details area */}
 
             {/* line image slider  */}
-            <LineImgSlider />
+            {/* <LineImgSlider /> */}
             {/* line image slider  */}
 
             {/* big text */}
@@ -50,7 +51,7 @@ const ServiceDetailsMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour  />
           {/* footer area */}
         </div>
       </div>
