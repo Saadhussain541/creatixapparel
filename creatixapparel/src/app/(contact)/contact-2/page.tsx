@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import ContactTwoMain from "@/pages/contact/contact-2";
 
 export const metadata: Metadata = {
-  title: "Creatix Apparel - Contact ",
+  title: "Creatix Apparel - Contact",
 };
 
 const ContactTwoPage = () => {

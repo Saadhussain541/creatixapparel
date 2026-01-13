@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import AboutMeMain from "@/pages/about/about-me";
 
 export const metadata: Metadata = {
-  title: "Liko - About us page",
+  title: "Creatix Apparel - About us page",
 };
 
 const AboutMePage = () => {
