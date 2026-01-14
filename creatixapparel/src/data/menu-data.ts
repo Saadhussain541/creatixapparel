@@ -77,7 +77,7 @@ const menu_data:IMenuDT[] = [
             id:1,
             menu_lists: [
               { title: 'About company', link: '/about-us' },
-              { title: 'About company1', link: '/about-me' },
+              // { title: 'About company1', link: '/about-me' },
               { title: 'About team', link: '/team' },
               { title: 'FAQ', link: '/faq' },
               {title:'Pricing',link:'/pricing'}
