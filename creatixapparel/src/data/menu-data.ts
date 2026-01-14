@@ -77,6 +77,7 @@ const menu_data:IMenuDT[] = [
             id:1,
             menu_lists: [
               { title: 'About company', link: '/about-us' },
+              { title: 'About company1', link: '/about-me' },
               { title: 'About team', link: '/team' },
               { title: 'FAQ', link: '/faq' },
               {title:'Pricing',link:'/pricing'}
@@ -146,6 +147,7 @@ export const mobile_menu_data:{
     link: '/',
     dropdown_menus: [
       { title: 'About company', link: '/about-us' },
+     
       { title: 'About team', link: '/team' },
       { title: 'FAQ', link: '/faq' },
       { title: 'Pricing', link: '/pricing' },
