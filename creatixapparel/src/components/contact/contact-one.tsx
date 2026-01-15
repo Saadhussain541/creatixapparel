@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ProjectShape, RightArrow } from "../svg";
-import cta from '@/assets/img/home-03/cta/cta-1.png';
+import cta from "@/assets/img/home-03/cta/cta-1.png";
 import Link from "next/link";
 
 export default function ContactOne() {
@@ -22,7 +22,7 @@ export default function ContactOne() {
               <Image src={cta} alt="cta-img" />
             </div>
             <div className="tp-cta-btn-box">
-              <Link className="tp-btn-zikzak p-relative" href="/contact">
+              <Link className="tp-btn-zikzak p-relative" href="/contact-2">
                 <span className="zikzak-content">
                   Get <br /> In Touch
                   <RightArrow clr="#19191A" />

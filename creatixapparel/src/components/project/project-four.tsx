@@ -20,29 +20,29 @@ const project_data = [
     img_1: port_1,
     img_2: port_2,
     meta: "DEC 2024 . Creative",
-    title: "Pellente dapibus",
+    title: "Digitizing Embroidery",
   },
   {
     id: 2,
     img_1: port_3,
     img_2: port_4,
     meta: "NOV 2024 . Creative",
-    title: "Chania tourism",
+    title: "Vector Art",
   },
   {
     id: 3,
     img_1: port_5,
     img_2: port_6,
     meta: "OCT 2024 . Creative",
-    title: "Fashion sentence",
+    title: "Custom Patches",
   },
-  {
-    id: 4,
-    img_1: port_7,
-    img_2: port_8,
-    meta: "SEP 2024 . Creative",
-    title: "Fashion sentence",
-  },
+  // {
+  //   id: 4,
+  //   img_1: port_7,
+  //   img_2: port_8,
+  //   meta: "SEP 2024 . Creative",
+  //   title: "Fashion sentence",
+  // },
 ];
 
 // prop type
@@ -51,7 +51,11 @@ type IProps = {
 };
 export default function ProjectFour({ style_2 = false }: IProps) {
   return (
-    <div className={`tp-project-3-area ${style_2 ? "pt-60 pw-project-style" : "pt-130 black-bg"}`}>
+    <div
+      className={`tp-project-3-area ${
+        style_2 ? "pt-60 pw-project-style" : "pt-130 black-bg"
+      }`}
+    >
       <div className="container container-1720">
         {!style_2 && (
           <div className="row justify-content-center">
@@ -94,11 +98,11 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     <div className="tp-project-3-content text-center">
                       <span className="tp-project-3-meta">{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio-details-1">{item.title}</Link>
+                        <Link href="/service-details">{item.title}</Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href="/portfolio-details-1"
+                        href="/service-details"
                       >
                         See Project
                       </Link>
