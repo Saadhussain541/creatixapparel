@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { Search } from "../svg";
-import faq_banner from '@/assets/img/inner-faq/faq/banner-faq.jpg';
+import faq_banner from "@/assets/img/inner-faq/faq/banner-faq.jpg";
 import FaqItem from "./faq-item";
 
-// type 
+// type
 type IFaq = {
   id: number;
   question: string;
   answer: string;
-}
+};
 // faq data
-export const faq_data:IFaq[] = [
+export const faq_data: IFaq[] = [
   {
     id: 1,
     question: "What we do?",
@@ -55,7 +55,7 @@ export default function FaqArea() {
     <div className="fq-faq-area fq-faq-bdr pt-80 pb-140">
       <div className="container">
         <div className="row">
-          <div className="col-xl-8 col-lg-8">
+          <div className="col-xl-12 col-lg-12">
             <div className="fq-faq-wrapper">
               <div className="tp-service-2-accordion-box">
                 <div className="accordion" id="accordionExample">
@@ -66,7 +66,7 @@ export default function FaqArea() {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4">
+          {/* <div className="col-xl-4 col-lg-4">
             <div className="fq-faq-sidebar">
               <div className="fq-faq-sidebar-content">
                 <h4 className="fq-faq-sidebar-title">Q&A</h4>
@@ -90,7 +90,7 @@ export default function FaqArea() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
