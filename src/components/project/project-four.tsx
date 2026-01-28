@@ -9,8 +9,6 @@ import port_3 from "@/assets/img/main-pictures/vector_main_1.png";
 import port_4 from "@/assets/img/main-pictures/vector_main_2.png";
 import port_5 from "@/assets/img/main-pictures/custom_patches_main_1.png";
 import port_6 from "@/assets/img/main-pictures/custom_patches_main_2.png";
-import port_7 from "@/assets/img/home-03/portfolio/port-7.jpg";
-import port_8 from "@/assets/img/home-03/portfolio/port-8.jpg";
 import Link from "next/link";
 
 // portfolio data
