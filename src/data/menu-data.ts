@@ -23,50 +23,68 @@ const menu_data:IMenuDT[] = [
   },
   {
     id: 2,
-    title: 'Services',
-    link: '/service',
-    pages_mega_menu: {
-      first: {
-        title: 'OUR SERVICES',
-        submenus: [
-          { title: 'Digitizing Embroidery', link: '/service-details' },
-          { title: 'Vector Art', link: '/' },
-          { title: 'Custom Patches', link: '/' },
-          { title: 'Other Services (Coming Soon)', link: '/' },
-          
-        ]
-        // submenus: [
-        //   { title: 'ABOUT US', link: '/about-us' },
-        //   { title: 'FAQ Page', link: '/faq' },
-        //   { title: 'ABOUT ME', link: '/about-me' },
-        //   { title: 'Pricing', link: '/pricing' },
-        //   { title: 'Team Page', link: '/team' },
-        //   { title: 'OUR CLIENTS', link: '/brand' },
-        //   { title: 'Team Details', link: '/team-details' },
-        //   { title: 'Register', link: '/register' },
-        //   { title: 'OUR SERVICES', link: '/service' },
-        //   { title: 'LogIn', link: '/login' },
-        //   { title: 'SERVICES DETAILS', link: '/service-details' },
-        //   { title: 'ERROR PAGE', link: '/error' },
-        // ]
-      },
-      second: {
-        title: 'Shop Page',
-        submenus: [
-          { title: 'Shop Page', link: '/shop' },
-          { title: 'Shop Details One', link: '/shop-details' },
-          { title: 'Shop Details Two', link: '/shop-details-2' },
-          { title: 'my account', link: '/account' },
-          { title: 'Cart', link: '/cart' },
-          { title: 'Checkout', link: '/checkout' },
-          { title: 'Wishlist', link: '/wishlist' },
-        ]
-      },
-
-    }
+    title: 'Digitizing',
+    link: '/service-details',
+  
   },
   {
     id: 3,
+    title: 'Vector Art',
+    link: '/vector-service',
+  
+  },
+  {
+    id: 4,
+    title: 'Custom Patches',
+    link: '/service-details',
+  
+  },
+  // {
+  //   id: 2,
+  //   title: 'Services',
+  //   link: '/service',
+  //   pages_mega_menu: {
+  //     first: {
+  //       title: 'OUR SERVICES',
+  //       submenus: [
+  //         { title: 'Digitizing Embroidery', link: '/service-details' },
+  //         { title: 'Vector Art', link: '/' },
+  //         { title: 'Custom Patches', link: '/' },
+  //         { title: 'Other Services (Coming Soon)', link: '/' },
+          
+  //       ]
+  //       // submenus: [
+  //       //   { title: 'ABOUT US', link: '/about-us' },
+  //       //   { title: 'FAQ Page', link: '/faq' },
+  //       //   { title: 'ABOUT ME', link: '/about-me' },
+  //       //   { title: 'Pricing', link: '/pricing' },
+  //       //   { title: 'Team Page', link: '/team' },
+  //       //   { title: 'OUR CLIENTS', link: '/brand' },
+  //       //   { title: 'Team Details', link: '/team-details' },
+  //       //   { title: 'Register', link: '/register' },
+  //       //   { title: 'OUR SERVICES', link: '/service' },
+  //       //   { title: 'LogIn', link: '/login' },
+  //       //   { title: 'SERVICES DETAILS', link: '/service-details' },
+  //       //   { title: 'ERROR PAGE', link: '/error' },
+  //       // ]
+  //     },
+  //     second: {
+  //       title: 'Shop Page',
+  //       submenus: [
+  //         { title: 'Shop Page', link: '/shop' },
+  //         { title: 'Shop Details One', link: '/shop-details' },
+  //         { title: 'Shop Details Two', link: '/shop-details-2' },
+  //         { title: 'my account', link: '/account' },
+  //         { title: 'Cart', link: '/cart' },
+  //         { title: 'Checkout', link: '/checkout' },
+  //         { title: 'Wishlist', link: '/wishlist' },
+  //       ]
+  //     },
+
+  //   }
+  // },
+  {
+    id: 5,
     title: 'About',
     link: '/',
     portfolio_mega_menus: {
@@ -89,17 +107,17 @@ const menu_data:IMenuDT[] = [
       
     }
   },
-  {
-    id: 4,
-    title: 'Blog',
-    link: '/blog-modern',
-    dropdown_menus: [
-      { title: 'Modern', link: '/blog-modern' },
+  // {
+  //   id: 4,
+  //   title: 'Blog',
+  //   link: '/blog-modern',
+  //   dropdown_menus: [
+  //     { title: 'Modern', link: '/blog-modern' },
       
-    ]
-  },
+  //   ]
+  // },
   {
-    id: 5,
+    id: 6,
     title: 'Contact',
     link: '/contact-2',
     dropdown_menus:[
