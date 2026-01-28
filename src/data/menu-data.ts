@@ -24,7 +24,7 @@ const menu_data:IMenuDT[] = [
   {
     id: 2,
     title: 'Digitizing',
-    link: '/service-details',
+    link: '/digitizing-service',
   
   },
   {
@@ -36,7 +36,7 @@ const menu_data:IMenuDT[] = [
   {
     id: 4,
     title: 'Custom Patches',
-    link: '/service-details',
+    link: '/custom-patches-service',
   
   },
   // {
@@ -153,8 +153,8 @@ export const mobile_menu_data:{
     link: '/service',
     dropdown_menus: [
       { title: 'Digitizing Embroidery', link: '/service-details' },
-      { title: 'Vector Art', link: '/' },
-      { title: 'Custom Patches', link: '/' },
+      { title: 'Vector Art', link: '/vector-service' },
+      { title: 'Custom Patches', link: '/custom-patches-service' },
       { title: 'Other Services (Coming Soon)', link: '/' },
       
     ]

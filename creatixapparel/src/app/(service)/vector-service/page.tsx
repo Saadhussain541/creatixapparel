@@ -1,0 +1,15 @@
+
+import React from "react";
+import { Metadata } from "next";
+import CustomPatchesMain from "@/pages/vector-service/vector-service";
+
+export const metadata: Metadata = {
+  title: "Creatix Apparel - Vector Service page",
+};
+
+const VectorServicePage = () => {
+  return <CustomPatchesMain />;
+};
+
+export default VectorServicePage;
+
