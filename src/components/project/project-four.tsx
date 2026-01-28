@@ -11,6 +11,7 @@ import port_5 from "@/assets/img/main-pictures/custom_patches_main_1.png";
 import port_6 from "@/assets/img/main-pictures/custom_patches_main_2.png";
 import Link from "next/link";
 
+
 // portfolio data
 const project_data = [
   {
