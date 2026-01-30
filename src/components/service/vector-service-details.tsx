@@ -6,33 +6,78 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 // images
-import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
-import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
-import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
+import b_1 from "@/assets/img/home-04/hero/hero-1.jpg"
+import sv_1 from "@/assets/img/vector_img/vector_img1.png";
+import sv_2 from "@/assets/img/vector_img/vector_img2.png";
+import sv_3 from "@/assets/img/vector_img/vector_img3.png";
+import sv_4 from "@/assets/img/vector_img/vector_img4.png";
+import sv_5 from "@/assets/img/vector_img/vector_img5.png";
+import sv_6 from "@/assets/img/vector_img/vector_img6.png";
+import sv_7 from "@/assets/img/vector_img/vector_Img7.png";
+import sv_8 from "@/assets/img/vector_img/vector_img8.png";
+import sv_9 from "@/assets/img/vector_img/vector_img9.png";
+import sv_10 from "@/assets/img/vector_img/vector_img10.png";
+import sv_11 from "@/assets/img/vector_img/vector_img11.png";
+import sv_12 from "@/assets/img/vector_img/vector_img12.png";
+import sv_13 from "@/assets/img/vector_img/vector_img13.png";
+import sv_14 from "@/assets/img/vector_img/vector_img14.png";
+import sv_15 from "@/assets/img/vector_img/vector_img15.png";
+import sv_16 from "@/assets/img/vector_img/vector_img16.png";
+import sv_17 from "@/assets/img/vector_img/vector_img17.png";
+import sv_18 from "@/assets/img/vector_img/vector_img18.png";
+import sv_19 from "@/assets/img/vector_img/vector_img19.png";
+import sv_20 from "@/assets/img/vector_img/vector_img20.png";
+import sv_21 from "@/assets/img/vector_img/vector_img21.png";
 
 // Service images array - using imported images
 const images = [
   sv_1,
   sv_2,
   sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
+  sv_4,
+  sv_5,
+  sv_6,
+  sv_7,
+  sv_8,
+  sv_9,
+  sv_10,
+  sv_11,
+  sv_12,
+  sv_13,
+  sv_14,
+  sv_15,
+  sv_16,
+  sv_17,
+  sv_18,
+  sv_19,
+  sv_20,
+  sv_21,
+
 ];
 
 // Services data with Digitizing category
 const services = [
-  { id: 1, name: "Digitizing Service 1", category: "LEFT CHEST DIGITIZING" },
-  { id: 2, name: "Digitizing Service 2", category: "JACKET BACK DIGITIZING" },
-  { id: 3, name: "Digitizing Service 3", category: "CAP / HAT DIGITIZING" },
-  { id: 4, name: "Vector Art Service 1", category: "VISOR DIGITIZING" },
-  { id: 5, name: "Digitizing Service 4", category: "LEFT CHEST DIGITIZING" },
-  { id: 6, name: "Digitizing Service 5", category: "JACKET BACK DIGITIZING" },
-  { id: 7, name: "Digitizing Service 6", category: "CAP / HAT DIGITIZING" },
-  { id: 8, name: "Vector Art Service 2", category: "VISOR DIGITIZING" },
+  { id: 1, name: "Vector", category: "Simple Vector" },
+  { id: 2, name: "Vector", category: "Simple Vector" },
+  { id: 3, name: "Vector", category: "Complicated Vector" },
+  { id: 4, name: "Vector", category: "Complicated Vector" },
+  { id: 5, name: "Vector", category: "DTG Printing" },
+  { id: 6, name: "Vector", category: "DTG Printing" },
+  { id: 7, name: "Vector", category: "Simple Vector" },
+  { id: 8, name: "Vector", category: "Complicated Vector" },
+  { id: 9, name: "Vector", category: "DTG Printing" },
+  { id: 10, name: "Vector", category: "Simple Vector" },
+  { id: 11, name: "Vector", category: "Complicated Vector" },
+  { id: 12, name: "Vector", category: "DTG Printing" },
+  { id: 13, name: "Vector", category: "Simple Vector" },
+  { id: 14, name: "Vector", category: "Complicated Vector" },
+  { id: 15, name: "Vector", category: "Complicated Vector" },
+  { id: 16, name: "Vector", category: "DTG Printing" },
+  { id: 17, name: "Vector", category: "Simple Vector" },
+  { id: 18, name: "Vector", category: "Complicated Vector" },
+  { id: 19, name: "Vector", category: "DTG Printing" },
+  { id: 20, name: "Vector", category: "Simple Vector" },
+  { id: 21, name: "Vector", category: "Complicated Vector" },
 ];
 
 export default function VectorServiceDetails() {
@@ -297,7 +342,7 @@ export default function VectorServiceDetails() {
                 <div className="service-details__tab-thumb">
                   <Image
                     data-speed="0.4"
-                    src={sv_1}
+                    src={b_1}
                     alt="service-img"
                     style={{ height: "auto" }}
                   />

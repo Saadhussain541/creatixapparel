@@ -1,38 +1,59 @@
 'use client';
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-
-// images
-import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
-import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
-import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
+import b_1 from "@/assets/img/home-04/hero/hero-1.jpg"
+import sv_1 from "@/assets/img/digitizing_img/digitizing_img1.png";
+import sv_2 from "@/assets/img/digitizing_img/digitizing_img2.png";
+import sv_3 from "@/assets/img/digitizing_img/digitizing_img3.jpg";
+import sv_4 from "@/assets/img/digitizing_img/digitizing_img4.jpg";
+import sv_5 from "@/assets/img/digitizing_img/digitizing_img6.png";
+import sv_6 from "@/assets/img/digitizing_img/digitizing_img7.png";
+import sv_7 from "@/assets/img/digitizing_img/digitizing_img8.jpg";
+import sv_8 from "@/assets/img/digitizing_img/digitizing_img9.jpg";
+import sv_9 from "@/assets/img/digitizing_img/digitizing_img10.jpg";
+import sv_10 from "@/assets/img/digitizing_img/digitizing_img11.png";
+import sv_11 from "@/assets/img/digitizing_img/digitizing_img12.png";
+import sv_12 from "@/assets/img/digitizing_img/digitizing_img13.png";
+import sv_13 from "@/assets/img/digitizing_img/digitizing_img14.png";
+import sv_14 from "@/assets/img/digitizing_img/digitizing_img15.png";
 
 // Service images array - using imported images
 const images = [
   sv_1,
   sv_2,
   sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
+  sv_4,
+  sv_5,
+  sv_6,
+  sv_7,
+  sv_8,
+  sv_9,
+  sv_10,
+  sv_11,
+  sv_12,
+  sv_13,
+  sv_14,
+
 ];
 
 // Services data with Digitizing category
 const services = [
-  { id: 1, name: "Digitizing Service 1", category: "LEFT CHEST DIGITIZING" },
-  { id: 2, name: "Digitizing Service 2", category: "JACKET BACK DIGITIZING" },
-  { id: 3, name: "Digitizing Service 3", category: "CAP / HAT DIGITIZING" },
-  { id: 4, name: "Vector Art Service 1", category: "VISOR DIGITIZING" },
-  { id: 5, name: "Digitizing Service 4", category: "LEFT CHEST DIGITIZING" },
-  { id: 6, name: "Digitizing Service 5", category: "JACKET BACK DIGITIZING" },
-  { id: 7, name: "Digitizing Service 6", category: "CAP / HAT DIGITIZING" },
-  { id: 8, name: "Vector Art Service 2", category: "VISOR DIGITIZING" },
+  { id: 1, name: "Digitizing", category: "LEFT CHEST" },
+  { id: 2, name: "Digitizing", category: "JACKET BACK" },
+  { id: 3, name: "Digitizing", category: "3D/Puff" },
+  { id: 4, name: "Vector Art", category: "3D/Puff" },
+  { id: 5, name: "Digitizing", category: "LEFT CHEST" },
+  { id: 6, name: "Digitizing", category: "JACKET BACK" },
+  { id: 7, name: "Digitizing", category: "CAP / HAT" },
+  { id: 8, name: "Vector Art", category: "3D/Puff" },
+  { id: 9, name: "Digitizing", category: "JACKET BACK" },
+  { id: 10, name: "Digitizing", category: "3D/Puff" },
+  { id: 11, name: "Vector Art", category: "3D/Puff" },
+  { id: 12, name: "Digitizing", category: "LEFT CHEST" },
+  { id: 13, name: "Digitizing", category: "JACKET BACK" },
+  { id: 14, name: "Digitizing", category: "CAP / HAT" },
 ];
 
 export default function ServiceDetailsArea() {
@@ -297,7 +318,7 @@ export default function ServiceDetailsArea() {
                 <div className="service-details__tab-thumb">
                   <Image
                     data-speed="0.4"
-                    src={sv_1}
+                    src={b_1}
                     alt="service-img"
                     style={{ height: "auto" }}
                   />
