@@ -25,14 +25,14 @@ const images = [
 
 // Services data with Digitizing category
 const services = [
-  { id: 1, name: "Digitizing Service 1", category: "LEFT CHEST DIGITIZING" },
-  { id: 2, name: "Digitizing Service 2", category: "JACKET BACK DIGITIZING" },
-  { id: 3, name: "Digitizing Service 3", category: "CAP / HAT DIGITIZING" },
-  { id: 4, name: "Vector Art Service 1", category: "VISOR DIGITIZING" },
-  { id: 5, name: "Digitizing Service 4", category: "LEFT CHEST DIGITIZING" },
-  { id: 6, name: "Digitizing Service 5", category: "JACKET BACK DIGITIZING" },
-  { id: 7, name: "Digitizing Service 6", category: "CAP / HAT DIGITIZING" },
-  { id: 8, name: "Vector Art Service 2", category: "VISOR DIGITIZING" },
+  { id: 1, name: "Digitizing Service 1", category: "Embriodery Patches" },
+  { id: 2, name: "Digitizing Service 2", category: "Pvc Patches" },
+  { id: 3, name: "Digitizing Service 3", category: "Embriodery Patches" },
+  { id: 4, name: "Vector Art Service 1", category: "Pvc Patches" },
+  { id: 5, name: "Digitizing Service 4", category: "Chenille Patches  " },
+  { id: 6, name: "Digitizing Service 5", category: "Leather Patches" },
+  { id: 7, name: "Digitizing Service 6", category: "Leather Patches" },
+  { id: 8, name: "Vector Art Service 2", category: "Woven Patches" },
 ];
 
 export default function CustomPatchesDetials() {
