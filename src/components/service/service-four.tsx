@@ -7,20 +7,20 @@ import icon from '@/assets/img/home-03/service/sv-icon-1.png';
 const service_data = [
   {
     id: 1,
-    title: "Product design",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
+    title: "Fast Turnaround Time",
+    desc: "Get your digitizing and vector files delivered in as little as 3 hours without compromising on quality.",
     category: ["Research", "Ui/ UX", "Prototyping"],
   },
   {
     id: 2,
-    title: "Web/Mobile",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
+    title: "Money-Back Guarantee",
+    desc: "Your satisfaction comes first. If you’re not happy with the result, we offer a money-back guarantee.",
     category: ["SEO", "Creative Development", "Varcel"],
   },
   {
     id: 3,
-    title: "Consulting",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
+    title: "24/7 Customer Support",
+    desc: "We’re available 24/7 to assist you with orders, revisions, and any questions you may have",
     category: ["Creative", "Digital strategy", "MVP"],
   },
 ];
@@ -40,14 +40,14 @@ export default function ServiceFour() {
                   <FirstBracket />
                 </span>
                 <span className="tp-subtitle-text tp_text_invert">
-                  Our approach
+                  Why brands choose us
                 </span>
                 <span>
                   <FirstBracketTwo />
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                Creative <br /> development studio
+                 Quality digitizing, <br /> vector art & custom patches
               </h4>
             </div>
           </div>
@@ -56,24 +56,24 @@ export default function ServiceFour() {
         {service_data.map((item) => (
           <div key={item.id} className="tp-service-3-wrap tp_fade_bottom">
             <div className="row align-items-start">
-              <div className="col-xl-3 col-lg-3">
+              <div className="col-xl-4 col-lg-4">
                 <div className="tp-service-3-title-box">
                   <h4 className="tp-service-3-title">
                     <Link href="/service">{item.title}</Link>
                   </h4>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7">
+              <div className="col-xl-8 col-lg-8">
                 <div className="tp-service-3-content">
                   <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-                  <div className="tp-service-3-category">
+                  {/* <div className="tp-service-3-category">
                     {item.category.map((c, i) => (
                       <span key={i}>{c}</span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2">
+              {/* <div className="col-xl-2 col-lg-2">
                 <div className="tp-service-3-btn-box text-start text-md-end">
                   <Link
                     className="tp-btn-zikzak-sm p-relative"
@@ -88,7 +88,7 @@ export default function ServiceFour() {
                     </span>
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

@@ -113,6 +113,11 @@ export default function PricingArea() {
               </div>
             </div>
           ))}
+          <h2 className="!text-[16px] text-center mt-4 leading-snug">
+            Custom Patches
+            <br />
+            Price based on required size and complexity
+          </h2>
         </div>
       </div>
     </div>
