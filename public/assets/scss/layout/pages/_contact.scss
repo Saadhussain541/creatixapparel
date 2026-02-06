@@ -462,3 +462,8 @@
         }
     }
 }
+
+/* custom placeholder color for contact form inputs */
+.input-placeholder::placeholder{
+    color: #FFFFFF !important;
+}

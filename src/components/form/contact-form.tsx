@@ -1,5 +1,4 @@
 'use client'
-import React from 'react';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -33,17 +32,17 @@ export default function ContactForm({btnCls=''}:IProps) {
     <form onSubmit={onSubmit}>
       <div className="cn-contactform-input mb-25">
         <label>Name</label>
-        <input id='name' {...register("name")} type="text" placeholder="John Doe" />
+        <input id='name' {...register("name")} type="text"  className="input-placeholder" placeholder="John Doe" required  />
         <ErrorMsg msg={errors.name?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Subject</label>
-        <input id='subject' {...register("subject")} type="text" placeholder="Your@email.com" />
+        <input id='subject' {...register("subject")} type="text" className="input-placeholder" placeholder="Your@email.com" required />
         <ErrorMsg msg={errors.subject?.message!} />
       </div>
       <div className="cn-contactform-input mb-25">
         <label>Message</label>
-        <textarea id='message' {...register("message")} placeholder="Tell Us About Your Project"></textarea>
+        <textarea id='message' {...register("message")} className="input-placeholder" required placeholder="Tell Us About Your Project"></textarea>
         <ErrorMsg msg={errors.message?.message!} />
       </div>
       <div className="cn-contactform-btn">

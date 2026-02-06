@@ -2,7 +2,7 @@ import React from "react";
 
 // prop type
 type IProps = {
-  item: { id: number; question: string; answer: string };
+  item: {id:number;question: string; answer: string};
 };
 
 export default function FaqItem({ item }: IProps) {
@@ -27,11 +27,7 @@ export default function FaqItem({ item }: IProps) {
         data-bs-parent="#accordionExample"
       >
         <div className="accordion-body">
-          <p
-            dangerouslySetInnerHTML={{
-              __html: item.answer,
-            }}
-          />
+          <p>{item.answer}</p>
         </div>
       </div>
     </div>

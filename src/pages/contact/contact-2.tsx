@@ -48,7 +48,7 @@ const ContactTwoMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Creatix Apparel</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get <br /> in touch
                         </h4>
@@ -67,7 +67,7 @@ const ContactTwoMain = () => {
                       <div className="col-xl-6">
                         <div className="cn-contactform-2-map">
                           <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d37866.42024631252!2d90.04636289871837!3d23.823039160865342!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1699251079678!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps?q=Boonville,California&output=embed"
                             style={{border:0}}
                             allowFullScreen
                             loading="lazy"
@@ -96,9 +96,8 @@ const ContactTwoMain = () => {
                         <div className="col-xl-10">
                            <div className="cn-contactform-support-bg d-flex align-items-center justify-content-center" style={{backgroundImage: "url(/assets/img/inner-contact/contact/contact-bg.png)"}}>
                               <div className="cn-contactform-support-text text-center">
-                                 <span>Or, you can contact one of our studios
-                                    directly below. We aim to respond
-                                    within 24 hours.</span>
+                                 <span>We’re here to help with digitizing, vector art, and custom patches.
+Send us your design and requirements — we usually reply within a few hours.</span>
                               </div>
                            </div>
                         </div>
@@ -108,7 +107,7 @@ const ContactTwoMain = () => {
                {/* about area end */}
 
               {/* contact location */}
-              <ContactLocationTwo/>
+              {/* <ContactLocationTwo/> */}
               {/* contact location */}
             </main>
 
