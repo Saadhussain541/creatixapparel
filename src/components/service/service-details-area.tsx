@@ -296,17 +296,16 @@ export default function ServiceDetailsArea() {
             <div className="row">
               <div className="offset-xl-4 col-xl-5">
                 <div className="service-details__banner-text mb-80">
-                  <p className="mb-30 tp_title_anim">
-                    Branding is essential to establish yourself in the market
-                    <br /> in a unique and permanent way. At Riveal, we attach{" "}
-                    <br /> great importance. We seek to understand your business
-                    to better convey your values ​​and your talent <br /> through
-                    your brand image.{" "}
-                  </p>
-                  <p className="tp_title_anim">
-                    Explore our achievements and let yourself be <br /> convinced!
-                  </p>
-                </div>
+  <p className="mb-30 tp_title_anim">
+    We offer professional embroidery digitizing services that deliver clean,
+    smooth, and machine-ready files.
+  </p>
+  <p className="tp_title_anim">
+    Every design is carefully digitized to ensure proper stitch flow, accurate
+    detailing, and minimal thread breaks. Our digitizing is suitable for all
+    types of garments, caps, and fabrics.
+  </p>
+</div>
               </div>
             </div>
           </div>

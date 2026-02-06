@@ -86,7 +86,7 @@ const menu_data:IMenuDT[] = [
   {
     id: 5,
     title: 'About',
-    link: '/',
+    link: '/about-us',
     portfolio_mega_menus: {
       first: {
         title: 'ABOUT US',
@@ -168,7 +168,7 @@ export const mobile_menu_data:{
   {
     id: 5,
     title: 'About',
-    link: '/',
+    link: '/about-us',
     dropdown_menus: [
       { title: 'About company', link: '/about-us' },
       { title: 'FAQ', link: '/faq' },

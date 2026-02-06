@@ -20,16 +20,16 @@ export default function FooterFour() {
                         <Link href="#">Home</Link>
                       </li>
                       <li>
-                        <Link href="#">About</Link>
+                        <Link href="/about-us">About</Link>
                       </li>
                       <li>
-                        <Link href="#">Landing</Link>
+                        <Link href="/contact-2">Contact</Link>
                       </li>
                       <li>
-                        <Link href="#">Blog</Link>
+                        <Link href="/faq">FAQ</Link>
                       </li>
                       <li>
-                        <Link href="#">Contact</Link>
+                        <Link href="/pricing">Pricing</Link>
                       </li>
                     </ul>
                   </div>
@@ -53,10 +53,10 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-60">
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
-                  <p className="mb-100">
+                  {/* <p className="mb-100">
                     Drop us a line sed id semper <br />
                     risus in hend rerit.
-                  </p>
+                  </p> */}
                   <Link className="tp-footer-3-logo p-relative" href="/">
                     <Image
                       src={logo}
@@ -81,18 +81,18 @@ export default function FooterFour() {
                         href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
                         target="_blank"
                       >
-                        740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
+                        Boonville California
                       </Link>
                     </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>
+                    {/* <span>
                       F <Link href="tel:+725214456">+ 725 214 456</Link>
-                    </span>
+                    </span> */}
                     <span>
                       {" "}
-                      <Link href="mailto:contact@liko.com">
-                        contact@creatixapparel.com
+                      <Link href="mailto:sales.creatixapparel@gmail.com">
+                         sales.creatixapparel@gmail.com
                       </Link>
                     </span>
                   </div>

@@ -320,17 +320,16 @@ export default function VectorServiceDetails() {
             <div className="row">
               <div className="offset-xl-4 col-xl-5">
                 <div className="service-details__banner-text mb-80">
-                  <p className="mb-30 tp_title_anim">
-                    Branding is essential to establish yourself in the market
-                    <br /> in a unique and permanent way. At Riveal, we attach{" "}
-                    <br /> great importance. We seek to understand your business
-                    to better convey your values ​​and your talent <br /> through
-                    your brand image.{" "}
-                  </p>
-                  <p className="tp_title_anim">
-                    Explore our achievements and let yourself be <br /> convinced!
-                  </p>
-                </div>
+  <p className="mb-30 tp_title_anim">
+    Our vector art services transform your logos and images into sharp,
+    scalable, and print-ready vector files.
+  </p>
+  <p className="tp_title_anim">
+    Whether for screen printing, sublimation, or large-format printing,
+    we ensure crisp lines, accurate colors, and high-resolution results
+    that look perfect at any size.
+  </p>
+</div>
               </div>
             </div>
           </div>

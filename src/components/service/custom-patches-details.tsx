@@ -275,17 +275,16 @@ export default function CustomPatchesDetials() {
             <div className="row">
               <div className="offset-xl-4 col-xl-5">
                 <div className="service-details__banner-text mb-80">
-                  <p className="mb-30 tp_title_anim">
-                    Branding is essential to establish yourself in the market
-                    <br /> in a unique and permanent way. At Riveal, we attach{" "}
-                    <br /> great importance. We seek to understand your business
-                    to better convey your values ​​and your talent <br /> through
-                    your brand image.{" "}
-                  </p>
-                  <p className="tp_title_anim">
-                    Explore our achievements and let yourself be <br /> convinced!
-                  </p>
-                </div>
+  <p className="mb-30 tp_title_anim">
+    We specialize in custom patches, including embroidered, PVC, woven,
+    and chenille patches.
+  </p>
+  <p className="tp_title_anim">
+    From simple logos to detailed designs, our patches are crafted with
+    premium materials and precise finishing, making them ideal for
+    uniforms, branding, and promotional use.
+  </p>
+</div>
               </div>
             </div>
           </div>

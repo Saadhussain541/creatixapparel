@@ -13,7 +13,8 @@ export default function VideoThree() {
           playsInline={true}
         >
           <source
-            src="https://html.aqlova.com/videos/liko/liko-3.mp4"
+            // src="https://html.aqlova.com/videos/liko/liko-3.mp4"
+            src="/assets/video/home_main_video.mov"
             type="video/mp4"
           />
         </video>
