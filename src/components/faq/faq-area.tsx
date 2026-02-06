@@ -14,39 +14,81 @@ type IFaq = {
 export const faq_data: IFaq[] = [
   {
     id: 1,
-    question: "What we do?",
+    question: "What is embroidery digitizing?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Embroidery digitizing is the process of converting your logo or artwork into a machine-readable embroidery file so it can be stitched accurately on garments.",
   },
   {
     id: 2,
-    question: "How we do it?",
+    question: "What is vector art?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Vector art is high-quality artwork used for screen printing, DTG, sublimation, and large-format printing. Vector files can be resized without losing quality.",
   },
   {
     id: 3,
-    question: "How  can i download the products?",
+    question: "Which file formats do you provide?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Digitizing: DST, PES, EMB, PNG and more.<br />Vector Art: AI, EPS, PDF, SVG, PSD, PNG.",
   },
   {
     id: 4,
-    question: "Free Shipping  & Return Order",
+    question: "What is your turnaround time?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Our standard turnaround time is 3 hours. Rush orders are also available.",
   },
   {
     id: 5,
-    question: "Payment options",
+    question: "Do you offer revisions?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Yes, we offer free revisions until you are fully satisfied.",
   },
   {
     id: 6,
-    question: "Best Quality Products",
+    question: "Do you provide a money-back guarantee?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.!",
+      "Yes, if the design does not meet your requirements, we offer a money-back guarantee.",
+  },
+  {
+    id: 7,
+    question: "Can you handle complex or small designs?",
+    answer:
+      "Absolutely. We specialize in complex designs, small lettering, 3D puff, and detailed artwork.",
+  },
+  {
+    id: 8,
+    question: "Do you offer 24/7 customer support?",
+    answer:
+      "Yes, our support team is available 24/7 to assist you with orders and inquiries.",
+  },
+  {
+    id: 9,
+    question: "How can I place an order?",
+    answer:
+      "You can place an order by sending your design through our website or email.",
+  },
+  {
+    id: 10,
+    question: "Are your designs machine-tested?",
+    answer:
+      "Yes, all designs are carefully checked to ensure smooth and clean stitching results.",
+  },
+  {
+    id: 11,
+    question: "What types of custom patches do you offer?",
+    answer:
+      "We offer all types of custom patches including embroidered, PVC, chenille, woven, leather, and printed patches.",
+  },
+  {
+    id: 12,
+    question: "Can I customize the size, shape, and backing?",
+    answer:
+      "Yes, patches can be fully customized in any size or shape with backing options like iron-on, sew-on, or Velcro.",
+  },
+  {
+    id: 13,
+    question: "What is your turnaround time for custom patches?",
+    answer:
+      "Our standard turnaround time for custom patches is 8–15 business days, with rush options available.",
   },
 ];
 

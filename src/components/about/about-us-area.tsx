@@ -51,10 +51,8 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom">
-                We are a creative studio that specializes in providing
-                high-quality design and branding solutions to businesses and
-                individuals. Our team is composed of talented designers,
-                developers, and marketers.!
+               We are a professional design company providing high-quality embroidery digitizing, vector art, and custom patches of all types. Our focus is on accuracy, fast turnaround, and customer satisfaction. With experienced designers and the latest tools, we ensure clean stitching, sharp vector artwork, and durable custom patches. We offer quick delivery, free revisions, 24/7 support, and a money-back guarantee, making us a trusted partner for brands, businesses, and individuals worldwide.
+
               </p>
             </div>
           </div>
@@ -66,7 +64,7 @@ export default function AboutUsArea() {
                 <div className="ab-about-category-title-box p-relative">
                   <h4 className="ab-about-category-title">
                     Something <br />
-                    <span>WHAT I DO</span>
+                    <span>WHAT WE DO</span>
                   </h4>
                   <Image
                     className="ab-about-shape-1 d-none d-md-block"
@@ -80,21 +78,20 @@ export default function AboutUsArea() {
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
-                        <li>Art direction</li>
-                        <li>Branding</li>
-                        <li>Content Production</li>
-                        <li>User Interface Design</li>
-                        <li>Animation</li>
+                        <li>Digitizing</li>
+                        <li>Vector Art</li>
+                        <li>Custom Patches</li>
+                        <li>Digital Illustration</li>
                       </ul>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
-                        <li>Brand Identity</li>
-                        <li>User Interface</li>
-                        <li>User Experience</li>
-                        <li>Responsive Design</li>
+                        <li>DTG Printing</li>
+                        <li>PVC Patches</li>
+                        <li>Leather Patches</li>
+                        <li>3D/Puff</li>
                       </ul>
                     </div>
                   </div>

@@ -96,7 +96,7 @@ const menu_data:IMenuDT[] = [
             menu_lists: [
               { title: 'About company', link: '/about-us' },
               // { title: 'About company1', link: '/about-me' },
-              { title: 'About team', link: '/team' },
+              // { title: 'About team', link: '/team' },
               { title: 'FAQ', link: '/faq' },
               {title:'Pricing',link:'/pricing'}
               
@@ -149,42 +149,38 @@ export const mobile_menu_data:{
   },
   {
     id: 2,
-    title: 'Services',
-    link: '/service',
-    dropdown_menus: [
-      { title: 'Digitizing Embroidery', link: '/service-details' },
-      { title: 'Vector Art', link: '/vector-service' },
-      { title: 'Custom Patches', link: '/custom-patches-service' },
-      { title: 'Other Services (Coming Soon)', link: '/' },
-      
-    ]
+    title: 'Digitizing',
+    link: '/digitizing-service',
+    dropdown_menus: []
   },
   {
     id: 3,
+    title: 'Vector Art',
+    link: '/vector-service',
+    dropdown_menus: []
+  },
+  {
+    id: 4,
+    title: 'Custom Patches',
+    link: '/custom-patches-service',
+    dropdown_menus: []
+  },
+  {
+    id: 5,
     title: 'About',
     link: '/',
     dropdown_menus: [
       { title: 'About company', link: '/about-us' },
-     
-      { title: 'About team', link: '/team' },
       { title: 'FAQ', link: '/faq' },
       { title: 'Pricing', link: '/pricing' },
     ]
   },
   {
-    id: 4,
-    title: 'Blog',
-    link: '/blog-modern',
-    dropdown_menus: [
-      { title: 'Modern', link: '/blog-modern' },
-    ]
-  },
-  {
-    id: 5,
+    id: 6,
     title: 'Contact',
     link: '/contact-2',
     dropdown_menus: [
       { title: 'Get IN touch', link: '/contact-2' },
     ]
   }
-]
+];

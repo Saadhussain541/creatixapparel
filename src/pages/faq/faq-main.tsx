@@ -54,12 +54,7 @@ const FaqMain = () => {
                           FAQ Page
                         </h4>
                       </div>
-                      <div className="tm-hero-text tp_title_anim">
-                        <p>
-                          Frequently asked question (FAQ)pages <br />
-                          to find answars.
-                        </p>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>

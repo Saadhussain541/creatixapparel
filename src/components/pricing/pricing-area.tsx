@@ -6,39 +6,50 @@ const pricing_data = [
   {
     id: 1,
     bg: "/assets/img/price/price-bg-1.jpg",
-    title: "Entry",
-    price: 26,
+    title: "Simple vector",
+    price: 5,
     features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
+      "Unlimited revision",
+      "Custom artwork",
+     
     ],
   },
   {
     id: 2,
-    bg: "/assets/img/price/price-bg-2.jpg",
-    title: "Project",
-    price: 46,
-    features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
+     bg: "/assets/img/price/price-bg-3.jpg",
+    title: "Complicated vector",
+    price: 15,
+   features: [
+      "Unlimited revision",
+      "Custom artwork",
+     
     ],
+   
   },
-  {
-    id: 3,
-    bg: "/assets/img/price/price-bg-3.jpg",
-    title: "Enterprise",
-    price: 96,
-    features: [
-      "Dolor sit amet",
-      "Tempor incididunt",
-      "Sed do eiusmod",
-      "Adipiscing elit",
-    ],
-  },
+   {
+      id: 3,
+      bg: "/assets/img/price/price-bg-3.jpg",
+      title: "Complicated digitizing",
+      price: 15,
+      features: [
+        "Unlimited revision",
+        "Custom artwork",
+      
+      ],
+    },
+    {
+      id: 4,
+      bg: "/assets/img/price/price-bg-2.jpg",
+      title: "Simple digitizing",
+      price: 5,
+      features: [
+        "Unlimited revision",
+        "Custom artwork",
+      
+      ],
+    },
+   
+    
 ];
 
 export default function PricingArea() {
@@ -47,17 +58,29 @@ export default function PricingArea() {
       <div className="container">
         <div className="row">
           {pricing_data.map((item) => (
-            <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div key={item.id} className="col-xl-6 col-lg-6 col-md-6 mb-30">
               <div
-                className={`tp-price-item ${item.id === 2 ? "active" : ""}`}
+                className={`tp-price-item ${
+                  item.title.toLowerCase().includes("complicated")
+                    ? "active"
+                    : ""
+                }`}
                 style={{
-                  backgroundImage: item.id === 2 ? `url(${item.bg})` : "",
+                  backgroundImage: item.title
+                    .toLowerCase()
+                    .includes("complicated")
+                    ? `url(${item.bg})`
+                    : "",
                 }}
               >
                 <div
                   className="tp-price-head"
                   style={{
-                    backgroundImage: item.id !== 2 ? `url(${item.bg})` : "",
+                    backgroundImage: !item.title
+                      .toLowerCase()
+                      .includes("complicated")
+                      ? `url(${item.bg})`
+                      : "",
                   }}
                 >
                   <span>#{item.id}</span>
@@ -65,7 +88,7 @@ export default function PricingArea() {
                 </div>
                 <div className="tp-price-body">
                   <span className="tp-price-monthly">
-                    $<i>{item.price}</i>/ per mo
+                    $<i>{item.price}</i>/ per design
                   </span>
                   <div className="tp-price-list">
                     <ul>
@@ -77,7 +100,7 @@ export default function PricingArea() {
                       ))}
                     </ul>
                   </div>
-                  <Link
+                  {/* <Link
                     className={`tp-btn-black-md ${item.id===2?"white-bg":""} w-100 text-center`}
                     href="/contact-2"
                   >
@@ -85,7 +108,7 @@ export default function PricingArea() {
                     <span>
                       <UpArrow />
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

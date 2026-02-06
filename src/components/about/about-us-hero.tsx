@@ -36,12 +36,12 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <span className="ab-inner-hero-subtitle">
-                Digital <br /> creative agency
+                Embroidery <br /> & vector studio
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-                Building Digital Presence
+                Premium Digitizing & Vector Art
               </h1>
-              <p>Digital experiences with maximum emotional impact</p>
+              <p>High-quality embroidery digitizing, vector art, and custom patches for apparel brands worldwide.</p>
             </div>
           </div>
         </div>
@@ -53,10 +53,9 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-                Liko develops, designs & delivers websites & creative campaigns
-                that drive results,
+                Creatix Apparel turns your logos and ideas into production‑ready embroidery files, sharp vectors, and custom patches with fast turnaround and reliable quality.
               </p>
-               <Link className="tp-btn-white-sm border-style" href="#">Our Story</Link>
+               <Link className="tp-btn-white-sm border-style" href="/about-us">Our Story</Link>
             </div>
           </div>
         </div>

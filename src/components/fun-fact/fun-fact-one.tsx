@@ -6,13 +6,13 @@ const counter_data = [
   {
     id: 1,
     title: "PROJECTS COMPLETED",
-    count: 200,
+    count: 100,
     text: "+",
   },
   {
     id: 2,
     title: "YEARS OF EXPERIENCE",
-    count: 17,
+    count: 10,
     text: "+",
   },
   {
@@ -21,12 +21,12 @@ const counter_data = [
     count: 9,
     text: "+",
   },
-  {
-    id: 4,
-    title: "GROWING AGENCY",
-    count: 194,
-    text: "%",
-  },
+ {
+  id: 4,
+  title: "CUSTOMER SATISFACTION",
+  count: 99,
+  text: "%",
+},
 ];
 export default function FunFactOne() {
   return (
@@ -40,7 +40,7 @@ export default function FunFactOne() {
                 Fun Facts
               </span>
               <h4 className="ab-inner-funfact-title tp_title_anim">
-                Agency <br /> Snapshots
+                Our <br /> Snapshots
               </h4>
             </div>
           </div>

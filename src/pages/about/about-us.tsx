@@ -55,7 +55,7 @@ const AboutUsMain = () => {
             {/* about area */}
 
             {/* team area */}
-            <TeamOne spacing="" />
+            {/* <TeamOne spacing="" /> */}
             {/* team area */}
 
             {/* fun fact area */}
@@ -63,7 +63,7 @@ const AboutUsMain = () => {
             {/* fun fact area */}
 
             {/* brand area */}
-            <BrandFive />
+            {/* <BrandFive /> */}
             {/* brand area */}
 
             {/* award area */}
