@@ -57,26 +57,26 @@ const images = [
 
 // Services data with Digitizing category
 const services = [
-  { id: 1, name: "Vector", category: "Simple Vector" },
-  { id: 2, name: "Vector", category: "Simple Vector" },
-  { id: 3, name: "Vector", category: "Complicated Vector" },
-  { id: 4, name: "Vector", category: "Complicated Vector" },
-  { id: 5, name: "Vector", category: "DTG Printing" },
-  { id: 6, name: "Vector", category: "DTG Printing" },
+  { id: 1, name: "Vector", category: "Complicated Vector" },
+  { id: 2, name: "Vector", category: "Complicated Vector" },
+  { id: 3, name: "Vector", category: "DTG Printing" },
+  { id: 4, name: "Vector", category: "DTG Printing" },
+  { id: 5, name: "Vector", category: "Simple Vector" },
+  { id: 6, name: "Vector", category: "Simple Vector" },
   { id: 7, name: "Vector", category: "Simple Vector" },
-  { id: 8, name: "Vector", category: "Complicated Vector" },
-  { id: 9, name: "Vector", category: "DTG Printing" },
-  { id: 10, name: "Vector", category: "Simple Vector" },
-  { id: 11, name: "Vector", category: "Complicated Vector" },
-  { id: 12, name: "Vector", category: "DTG Printing" },
+  { id: 8, name: "Vector", category: "DTG Printing" },
+  { id: 9, name: "Vector", category: "Complicated Vector" },
+  { id: 10, name: "Vector", category: "Complicated Vector" },
+  { id: 11, name: "Vector", category: "DTG Printing" },
+  { id: 12, name: "Vector", category: "Complicated Vector" },
   { id: 13, name: "Vector", category: "Simple Vector" },
   { id: 14, name: "Vector", category: "Complicated Vector" },
-  { id: 15, name: "Vector", category: "Complicated Vector" },
+  { id: 15, name: "Vector", category: "Simple Vector" },
   { id: 16, name: "Vector", category: "DTG Printing" },
-  { id: 17, name: "Vector", category: "Simple Vector" },
-  { id: 18, name: "Vector", category: "Complicated Vector" },
-  { id: 19, name: "Vector", category: "DTG Printing" },
-  { id: 20, name: "Vector", category: "Simple Vector" },
+  { id: 17, name: "Vector", category: "Complicated Vector" },
+  { id: 18, name: "Vector", category: "Simple Vector" },
+  { id: 19, name: "Vector", category: "Simple Vector" },
+  { id: 20, name: "Vector", category: "Complicated Vector" },
   { id: 21, name: "Vector", category: "Complicated Vector" },
 ];
 
@@ -99,10 +99,10 @@ export default function VectorServiceDetails() {
   }, [selectedCategory]);
 
   // Get images array for lightbox based on filtered services
-  // Convert StaticImageData to slides format for yet-another-react-lightbox
+  // Use service.id to map to correct image (not filtered index)
   const lightboxSlides = useMemo(() => {
-    return filteredServices.map((service, index) => {
-      const img = images[index % images.length];
+    return filteredServices.map((service) => {
+      const img = images[(service.id - 1) % images.length];
       
       let imgSrc = '';
       
@@ -371,7 +371,7 @@ export default function VectorServiceDetails() {
           {/* Gallery Section */}
           <div className="row gy-4">
             {filteredServices.map((service, index) => {
-              const imageIndex = index % images.length;
+              const imageIndex = (service.id - 1) % images.length;
               const currentImage = images[imageIndex];
               return (
                 <div className="col-md-6 col-lg-4" key={service.id}>

@@ -6,33 +6,59 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 // images
-import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
-import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-2.jpg";
-import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-3.jpg";
+import b_1 from "@/assets/img/home-04/hero/hero-1.jpg"
+import sv_1 from "@/assets/img/patches/patches1.png";
+import sv_2 from "@/assets/img/patches/patches2.png";
+import sv_3 from "@/assets/img/patches/patches3.png";
+import sv_4 from "@/assets/img/patches/patches4.png";
+import sv_5 from "@/assets/img/patches/patches5.png";
+import sv_6 from "@/assets/img/patches/patches6.png";
+import sv_7 from "@/assets/img/patches/patches7.png";
+import sv_8 from "@/assets/img/patches/patches8.png";
+import sv_9 from "@/assets/img/patches/patches9.png";
+import sv_10 from "@/assets/img/patches/patches10.png";
+import sv_11 from "@/assets/img/patches/patches11.png";
+import sv_12 from "@/assets/img/patches/patches12.png";
+import sv_13 from "@/assets/img/patches/patches13.png";
+import sv_14 from "@/assets/img/patches/patches14.png";
+import sv_15 from "@/assets/img/patches/patches15.png";
 
 // Service images array - using imported images
 const images = [
   sv_1,
   sv_2,
   sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
-  sv_1,
-  sv_2,
-  sv_3,
+  sv_4,
+  sv_5,
+  sv_6,
+  sv_7,
+  sv_8,
+  sv_9,
+  sv_10,
+  sv_11,
+  sv_12,
+  sv_13,
+  sv_14,
+  sv_15,
 ];
 
 // Services data with Digitizing category
 const services = [
-  { id: 1, name: "Digitizing Service 1", category: "Embriodery Patches" },
-  { id: 2, name: "Digitizing Service 2", category: "Pvc Patches" },
-  { id: 3, name: "Digitizing Service 3", category: "Embriodery Patches" },
-  { id: 4, name: "Vector Art Service 1", category: "Pvc Patches" },
-  { id: 5, name: "Digitizing Service 4", category: "Chenille Patches  " },
-  { id: 6, name: "Digitizing Service 5", category: "Leather Patches" },
-  { id: 7, name: "Digitizing Service 6", category: "Leather Patches" },
-  { id: 8, name: "Vector Art Service 2", category: "Woven Patches" },
+  { id: 1, name: "Patches", category: "Chenille Patches" },
+  { id: 2, name: "Patches", category: "Chenille Patches" },
+  { id: 3, name: "Patches", category: "Chenille Patches" },
+  { id: 4, name: "Patches", category: "EMB Patches" },
+  { id: 5, name: "Patches", category: "EMB Patches" },
+  { id: 6, name: "Patches", category: "EMB Patches" },
+  { id: 7, name: "Patches", category: "Leather Patches" },
+  { id: 8, name: "Patches", category: "Leather Patches" },
+  { id: 9, name: "Patches", category: "Leather Patches" },
+  { id: 10, name: "Patches", category: "PVC Patches" },
+  { id: 11, name: "Patches", category: "PVC Patches" },
+  { id: 12, name: "Patches", category: "PVC Patches" },
+  { id: 13, name: "Patches", category: "Woven Patches" },
+  { id: 14, name: "Patches", category: "Woven Patches" },
+  { id: 15, name: "Patches", category: "Woven Patches" },
 ];
 
 export default function CustomPatchesDetials() {
@@ -54,10 +80,10 @@ export default function CustomPatchesDetials() {
   }, [selectedCategory]);
 
   // Get images array for lightbox based on filtered services
-  // Convert StaticImageData to slides format for yet-another-react-lightbox
+  // Use service.id to map to correct image (not filtered index)
   const lightboxSlides = useMemo(() => {
-    return filteredServices.map((service, index) => {
-      const img = images[index % images.length];
+    return filteredServices.map((service) => {
+      const img = images[(service.id - 1) % images.length];
       
       let imgSrc = '';
       
@@ -296,7 +322,7 @@ export default function CustomPatchesDetials() {
                 <div className="service-details__tab-thumb">
                   <Image
                     data-speed="0.4"
-                    src={sv_1}
+                    src={b_1}
                     alt="service-img"
                     style={{ height: "auto" }}
                   />
@@ -326,7 +352,7 @@ export default function CustomPatchesDetials() {
           {/* Gallery Section */}
           <div className="row gy-4">
             {filteredServices.map((service, index) => {
-              const imageIndex = index % images.length;
+              const imageIndex = (service.id - 1) % images.length;
               const currentImage = images[imageIndex];
               return (
                 <div className="col-md-6 col-lg-4" key={service.id}>

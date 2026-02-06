@@ -25,7 +25,7 @@ export default function AboutThree() {
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-              We specialize in embroidery digitizing, vector artwork, and custom patches.{" "}
+              We specialize in embroidery digitizing, vector art, and custom patches.{" "}
                 <span>
                   {" "}
                   <br />&

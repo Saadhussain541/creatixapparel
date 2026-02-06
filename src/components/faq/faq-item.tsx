@@ -27,7 +27,7 @@ export default function FaqItem({ item }: IProps) {
         data-bs-parent="#accordionExample"
       >
         <div className="accordion-body">
-          <p>{item.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       </div>
     </div>

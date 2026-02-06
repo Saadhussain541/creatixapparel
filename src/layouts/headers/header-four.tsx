@@ -67,13 +67,13 @@ export default function HeaderFour() {
               <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-3-right d-flex align-items-center justify-content-end">
                   <div className="tp-header-3-social d-none d-sm-block">
-                    <Link href="#">
+                    {/* <Link href="#">
                       <i className="fa-brands fa-twitter"></i>
-                    </Link>
-                    <Link href="#">
+                    </Link> */}
+                    <Link href="https://www.facebook.com/people/Creatix-Apparel/61564259854835/" target="_blank">
                       <i className="fa-brands fa-facebook"></i>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.instagram.com/creatixxapparel/?hl=en" target="_blank">
                       <i className="fa-brands fa-instagram"></i>
                     </Link>
                   </div>

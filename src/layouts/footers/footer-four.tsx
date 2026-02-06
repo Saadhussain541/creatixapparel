@@ -100,18 +100,18 @@ export default function FooterFour() {
                 <div className="tp-footer-3-widget">
                   <h4 className="tp-footer-3-title">Follow</h4>
                   <div className="tp-footer-3-social">
-                    <Link href="#">
+                    {/* <Link href="#">
                       <i className="fa-brands fa-twitter"></i>
-                    </Link>
-                    <Link href="#">
+                    </Link> */}
+                    <Link href="https://www.facebook.com/people/Creatix-Apparel/61564259854835/" target="_blank">
                       <i className="fa-brands fa-facebook-f"></i>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.instagram.com/creatixxapparel/?hl=en" target="_blank">
                       <i className="fa-brands fa-instagram"></i>
                     </Link>
-                    <Link href="#">
+                    {/* <Link href="#">
                       <i className="fa-brands fa-linkedin-in"></i>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

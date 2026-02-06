@@ -42,17 +42,17 @@ const images = [
 const services = [
   { id: 1, name: "Digitizing", category: "LEFT CHEST" },
   { id: 2, name: "Digitizing", category: "JACKET BACK" },
-  { id: 3, name: "Digitizing", category: "3D/Puff" },
-  { id: 4, name: "Vector Art", category: "3D/Puff" },
-  { id: 5, name: "Digitizing", category: "LEFT CHEST" },
-  { id: 6, name: "Digitizing", category: "JACKET BACK" },
-  { id: 7, name: "Digitizing", category: "CAP / HAT" },
-  { id: 8, name: "Vector Art", category: "3D/Puff" },
-  { id: 9, name: "Digitizing", category: "JACKET BACK" },
-  { id: 10, name: "Digitizing", category: "3D/Puff" },
-  { id: 11, name: "Vector Art", category: "3D/Puff" },
+  { id: 3, name: "Digitizing", category: "CAP / HAT" },
+  { id: 4, name: "Vector Art", category: "JACKET BACK" },
+  { id: 5, name: "Digitizing", category: "JACKET BACK" },
+  { id: 6, name: "Digitizing", category: "3D/Puff" },
+  { id: 7, name: "Digitizing", category: "JACKET BACK" },
+  { id: 8, name: "Vector Art", category: "JACKET BACK" },
+  { id: 9, name: "Digitizing", category: "LEFT CHEST" },
+  { id: 10, name: "Digitizing", category: "LEFT CHEST" },
+  { id: 11, name: "Vector Art", category: "LEFT CHEST" },
   { id: 12, name: "Digitizing", category: "LEFT CHEST" },
-  { id: 13, name: "Digitizing", category: "JACKET BACK" },
+  { id: 13, name: "Digitizing", category: "LEFT CHEST" },
   { id: 14, name: "Digitizing", category: "CAP / HAT" },
 ];
 
@@ -75,10 +75,10 @@ export default function ServiceDetailsArea() {
   }, [selectedCategory]);
 
   // Get images array for lightbox based on filtered services
-  // Convert StaticImageData to slides format for yet-another-react-lightbox
+  // Use service.id to map to correct image (not filtered index)
   const lightboxSlides = useMemo(() => {
-    return filteredServices.map((service, index) => {
-      const img = images[index % images.length];
+    return filteredServices.map((service) => {
+      const img = images[(service.id - 1) % images.length];
       
       let imgSrc = '';
       
@@ -347,7 +347,7 @@ export default function ServiceDetailsArea() {
           {/* Gallery Section */}
           <div className="row gy-4">
             {filteredServices.map((service, index) => {
-              const imageIndex = index % images.length;
+              const imageIndex = (service.id - 1) % images.length;
               const currentImage = images[imageIndex];
               return (
                 <div className="col-md-6 col-lg-4" key={service.id}>
