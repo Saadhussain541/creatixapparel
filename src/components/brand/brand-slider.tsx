@@ -14,7 +14,7 @@ import b_4 from "@/assets/img/home-04/software/4.png";
 
 import b_5 from "@/assets/img/home-04/software/5.png";
 
-import b_6 from "@/assets/img/home-04/software/5.png";
+import b_6 from "@/assets/img/home-04/software/3.png";
 
 
 const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6,  b_1, b_2, b_3, b_4, b_5, b_6];
